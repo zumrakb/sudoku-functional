@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SUDOKU APP 🧩</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <html>
+    <head>
+      <title>SUDOKU ARAYÜZÜ</title>
+    </head>
+    <body>
+      <h1>SUDOKU</h1>
+
+      <div class="sudoku-outline">
+        <div id="sudoku-container">
+          <table class="sudoku-board">
+            <tr class="sudoku-row">
+              <td
+                value="0,0"
+                maxlength="2"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+              <td class="sudoku-cell sudoku-subgrid">3</td>
+              <td
+                value="0,2"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+            </tr>
+
+            <tr class="sudoku-row">
+              <td
+                value="1,0"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+              <td
+                value="1,1"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+              <td class="sudoku-cell sudoku-subgrid">2</td>
+            </tr>
+
+            <tr class="sudoku-row">
+              <td
+                value="2,0"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+              <td
+                value="2,1"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+              <td
+                value="2,2"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+            </tr>
+          </table>
+
+          <table class="sudoku-board">
+            <tr class="sudoku-row">
+              <td
+                value="0,3"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+              <td
+                value="0,4"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+              <td class="sudoku-cell sudoku-subgrid">8</td>
+            </tr>
+
+            <tr class="sudoku-row">
+              <td
+                value="1,3"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+              <td class="sudoku-cell sudoku-subgrid">9</td>
+              <td
+                value="1,5"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+            </tr>
+
+            <tr class="sudoku-row">
+              <td class="sudoku-cell sudoku-subgrid">3</td>
+              <td
+                value="2,4"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+              <td
+                value="2,5"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+            </tr>
+          </table>
+
+          <table class="sudoku-board">
+            <tr class="sudoku-row">
+              <td
+                value="0,6"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+              <td class="sudoku-cell sudoku-subgrid">1</td>
+              <td
+                value="0,8"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+            </tr>
+
+            <tr class="sudoku-row">
+              <td
+                value="1,6"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+              <td class="sudoku-cell sudoku-subgrid">4</td>
+              <td class="sudoku-cell sudoku-subgrid">8</td>
+            </tr>
+
+            <tr class="sudoku-row">
+              <td class="sudoku-cell sudoku-subgrid">5</td>
+              <td class="sudoku-cell sudoku-subgrid">6</td>
+              <td
+                value="2,8"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+            </tr>
+          </table>
+        </div>
+
+        <div id="sudoku-container">
+          <table class="sudoku-board">
+            <tr class="sudoku-row">
+              <td class="sudoku-cell sudoku-subgrid">8</td>
+              <td
+                value="3,1"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+              <td
+                value="3,2"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+            </tr>
+
+            <tr class="sudoku-row">
+              <td
+                value="4,0"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+              <td
+                value="4,1"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+              <td class="sudoku-cell sudoku-subgrid">6</td>
+            </tr>
+
+            <tr class="sudoku-row">
+              <td class="sudoku-cell sudoku-subgrid">7</td>
+              <td class="sudoku-cell sudoku-subgrid">1</td>
+              <td
+                value="5,2"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+            </tr>
+          </table>
+
+          <table class="sudoku-board">
+            <tr class="sudoku-row">
+              <td
+                value="3,3"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+              <td
+                value="3,4"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+              <td class="sudoku-cell sudoku-subgrid">1</td>
+            </tr>
+
+            <tr class="sudoku-row">
+              <td
+                value="4,3"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+              <td class="sudoku-cell sudoku-subgrid">5</td>
+              <td
+                value="4,5"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+            </tr>
+
+            <tr class="sudoku-row">
+              <td class="sudoku-cell sudoku-subgrid">9</td>
+              <td
+                value="5,4"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+              <td
+                value="5,5"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+            </tr>
+          </table>
+
+          <table class="sudoku-board">
+            <tr class="sudoku-row">
+              <td
+                value="3,6"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+              <td class="sudoku-cell sudoku-subgrid">2</td>
+              <td class="sudoku-cell sudoku-subgrid">3</td>
+            </tr>
+
+            <tr class="sudoku-row">
+              <td class="sudoku-cell sudoku-subgrid">7</td>
+              <td
+                value="4,7"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+              <td
+                value="4,8"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+            </tr>
+
+            <tr class="sudoku-row">
+              <td
+                value="5,6"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+              <td
+                value="5,7"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+              <td class="sudoku-cell sudoku-subgrid">6</td>
+            </tr>
+          </table>
+        </div>
+        <div id="sudoku-container">
+          <table class="sudoku-board">
+            <tr class="sudoku-row">
+              <td class="sudoku-cell sudoku-subgrid">9</td>
+              <td class="sudoku-cell sudoku-subgrid">6</td>
+              <td class="sudoku-cell sudoku-subgrid">1</td>
+            </tr>
+
+            <tr class="sudoku-row">
+              <td
+                value="7,0"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+              <td class="sudoku-cell sudoku-subgrid">8</td>
+              <td
+                value="7,2"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+            </tr>
+
+            <tr class="sudoku-row">
+              <td
+                value="8,0"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+              <td
+                value="8,1"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+              <td
+                value="8,2"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+            </tr>
+          </table>
+
+          <table class="sudoku-board">
+            <tr class="sudoku-row">
+              <td
+                value="6,3"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+              <td
+                value="6,4"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+              <td
+                value="6,5"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+            </tr>
+
+            <tr class="sudoku-row">
+              <td
+                value="7,3"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+              <td class="sudoku-cell sudoku-subgrid">1</td>
+              <td
+                value="7,5"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+            </tr>
+
+            <tr class="sudoku-row">
+              <td class="sudoku-cell sudoku-subgrid">2</td>
+              <td
+                value="8,4"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+              <td
+                value="8,5"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+            </tr>
+          </table>
+
+          <table class="sudoku-board">
+            <tr class="sudoku-row">
+              <td
+                value="6,6"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+              <td
+                value="6,7"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+              <td
+                value="6,8"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+            </tr>
+
+            <tr class="sudoku-row">
+              <td class="sudoku-cell sudoku-subgrid">6</td>
+              <td
+                value="7,7"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+              <td
+                value="7,8"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+            </tr>
+
+            <tr class="sudoku-row">
+              <td
+                value="8,6"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+              <td class="sudoku-cell sudoku-subgrid">7</td>
+              <td
+                value="8,8"
+                contenteditable
+                class="sudoku-cell sudoku-subgrid"
+              ></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <p>Hazırlayan: Zümra Küçükbezirci</p>
+      <script src="./script.js"></script>
+    </body>
+  </html>
+</html>
